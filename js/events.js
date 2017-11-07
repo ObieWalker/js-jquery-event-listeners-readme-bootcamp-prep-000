@@ -7,11 +7,12 @@ function getIt(){
   })
 }
 
-var frameIt = function(){
-    $("img").on('load', function(){
-        $(this).addClass("tasty");
-    })
+function frameIt(){
+  $('img').on('load', function(){
+    $(this).addClass("tasy");
+  })
 }
+
 
 var pressIt = function(){
     $("input[type='text']").on('keydown', function(key){
