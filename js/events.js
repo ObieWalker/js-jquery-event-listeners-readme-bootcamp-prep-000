@@ -7,7 +7,7 @@ function getIt(){
 
 function frameIt(){
   $('').on('load', function(){
-    
+
   })
 }
 
@@ -16,7 +16,7 @@ function pressIt(){
     if($("input:first").val() === 71){
       alert('alert you pressed G')
       return
-    }  
+    }
   })
 }
 
