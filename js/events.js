@@ -14,7 +14,7 @@ function frameIt(){
 }
 
 
-var pressIt = function(){
+function pressIt(){
     $("input[type='text']").on('keydown', function(key){
       if(key.which === 71)
         alert("Hey");
