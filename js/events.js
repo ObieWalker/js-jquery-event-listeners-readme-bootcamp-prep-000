@@ -1,28 +1,29 @@
+
 //define functions here
-function getIt(){
-  $('p').on('click', function(){
-    alert('hey')
-  })
+
+var getIt = function(){
+    $("p").on('click', function(){
+      alert("Hey");
+    })
 }
 
-function frameIt(){
-  $('img').on('load', function(){
-    $(this).addClass("tasy");
-  })
+var frameIt = function(){
+    $("img").on('load', function(){
+        $(this).addClass("tasty");
+    })
 }
 
-function pressIt(){
-  $('form').on('keydown', function(){
-    if($(key.which === 71){
-      alert('alert you pressed G')
-    }
-  })
+var pressIt = function(){
+    $("input[type='text']").on('keydown', function(key){
+      if(key.which === 71)
+        alert("Hey");
+    })
 }
 
-function submitIt(){
-  $('form').on('submit', function(){
-    alert('Your form is going to be submitted now.')
-  })
+var submitIt = function(){
+    $("form").on('submit', function(){
+      alert("Your form is going to be submitted now.");
+    })
 }
 
 $(document).ready(function(){
@@ -31,6 +32,6 @@ $(document).ready(function(){
 getIt();
 frameIt();
 pressIt();
-submitIt();
+submit();
 
 });
