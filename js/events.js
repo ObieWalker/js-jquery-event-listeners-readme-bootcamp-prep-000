@@ -7,14 +7,13 @@ function getIt(){
 
 function frameIt(){
   $('img').on('load', function(){
-    
-
+    $(this).addClass("tasy");
   })
 }
 
 function pressIt(){
   $('form').on('keydown', function(){
-    if($("input:first").val() === 71){
+    if($(key.which === 71){
       alert('alert you pressed G')
       return
     }
