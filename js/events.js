@@ -14,13 +14,12 @@ function frameIt(){
 }
 
 
-function pressIt(){
-  $('form').on('keydown', function(){
-    if($(key.which === 71){
-      alert('alert you pressed G')
-  })
+var pressIt = function(){
+    $("input[type='text']").on('keydown', function(key){
+      if(key.which === 71)
+        alert("Hey");
+    })
 }
-
 
 var submitIt = function(){
     $("form").on('submit', function(){
